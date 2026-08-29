@@ -187,7 +187,7 @@ The website interface was planned and designed using wireframes before implement
 
 The wireframes define the structure and layout of the main website pages and helped guide the development of the final interface.
 
-📄 **[View Wireframes](docs/Wireframes.pdf)**
+📄 **[View Wireframes](Wireframes.pdf)**
 
 ---
 
