@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Evaluation</title>
+  <link rel="stylesheet" href="styleall.css"> 
+ 
+</head>
+<script src="Activityevaluation.js" defer></script>
+<body>
+
+    
+ <header> 
+  <div class="header-container"> 
+      <div class="header-logo"> 
+          <img src="logo.png" alt="Logo"> 
+          <span class="site-name">Pink Horizon</span> 
+      </div> 
+      <nav class="header-nav"> 
+          <a href="Activities.html"> 
+              <div class="nav-icon"><img src="activities.png" alt="Activities Icon"></div> 
+              Activities 
+          </a> 
+          <a href="coaches.html"> 
+              <div class="nav-icon"><img src="coach.png" alt="Coaches Icon"></div> 
+              Coaches 
+          </a> 
+          <a href="Parentdashboard.html"> 
+              <div class="nav-icon"><img src="parent.png" alt="Parent Icon"></div> 
+              Parent 
+          </a> 
+          <a href="administrator.html"> 
+              <div class="nav-icon"><img src="admin.png" alt="Administrator Icon"></div> 
+              Administrator 
+          </a> 
+      </nav> 
+  </div> 
+</header>
+
+   
+    <div class="breadcrumb">
+      <a href="home.html">Home</a> >
+      <a href="Parentdashboard.html">Parent Dashboard </a> >
+      <a href="Activityevaluation.html" class="active">Evaluate Your Kid's Activity</a>
+  </div>
+    <h1>Evaluate Your Kid's Activity</h1>
+
+    <form>
+      <label for="activity-select">Select Activity:</label>
+      <select id="activity-select">
+        <option value="">Choose an Activity</option>
+        <option value="activity1">Ballet</option>
+        <option value="activity2">Drawing</option>
+        <option value="activity3">Makeup</option>
+        <option value="activity4">Planting</option>
+        <option value="activity5">Cooking</option>
+        <option value="activity5">Sewing</option>
+
+      </select>
+
+      <div class="selected-activity">
+        <p> Sewing</p>
+        <img src="sewing.jpg" alt="Selected Activity">
+      </div>
+
+      <div class="rating">
+        <p>Rate the Activity:</p>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+      </div>
+
+      <label for="comment">Add Comment:</label>
+      <textarea id="comment" rows="6" placeholder="Add text"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  
+    <footer> 
+      <div class="footer-container"> 
+          
+          <div class="footer-logo"> 
+              <img src="logo.png" alt="Logo"> 
+          </div> 
+   
+         
+          <p class="footer-title">Contact us</p> 
+   
+         
+          <div class="footer-contact"> 
+              <div class="contact-item"> 
+                  <a href="#"><img src="insta.png" alt="Instagram"></a> 
+                  <p>@Pink_Horizon</p> 
+              </div> 
+              <div class="contact-item"> 
+                  <a href="#"><img src="email.png" alt="Email"></a> 
+                  <p>PinkHorizon@gmail.com</p> 
+              </div> 
+              <div class="contact-item"> 
+                  <a href="#"><img src="whats.png" alt="WhatsApp"></a> 
+                  <p>0557400029</p> 
+              </div> 
+          </div> 
+   
+         
+          <div class="footer-copyright"> 
+              <p>Copyright &copy; 2025 Website. All rights reserved</p> 
+          </div> 
+      </div> 
+  </footer>
+  </div>
+    <script src="javaScript.JS"></script>
+
+</body>
+</html>

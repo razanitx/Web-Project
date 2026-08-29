@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Horizon - Parent Dashboard</title>
+    <link rel="stylesheet" href="styleall.css">
+    
+</head>
+<body>
+   <!-- Header --> 
+ <header> 
+    <div class="header-container"> 
+        <div class="header-logo"> 
+            <img src="logo.png" alt="Logo"> 
+            <span class="site-name">Pink Horizon</span> <!-- اسم الموقع --> 
+        </div> 
+        <nav class="header-nav"> 
+            <a href="Activities.html"> 
+                <div class="nav-icon"><img src="activities.png" alt="Activities Icon"></div> 
+                Activities 
+            </a> 
+            <a href="coaches.html"> 
+                <div class="nav-icon"><img src="coach.png" alt="Coaches Icon"></div> 
+                Coaches 
+            </a> 
+            <a href="Parentdashboard.html"> 
+                <div class="nav-icon"><img src="parent.png" alt="Parent Icon"></div> 
+                Parent 
+            </a> 
+            <a href="administrator.html"> 
+                <div class="nav-icon"><img src="admin.png" alt="Administrator Icon"></div> 
+                Administrator 
+            </a> 
+        </nav> 
+    </div> 
+</header>
+
+<div class="breadcrumb">
+    <a href="home.html">Home</a> >
+    <a href="Parentdashboard.html" class="active">Parent Dashboard</a>
+</div>
+   
+
+    <div class="dashboard">
+        <h1>Parent Dashboard</h1>
+        <h2>Kids</h2>
+        
+        <!-- قسم الفرز -->
+        <div class="sort-section">
+            <label for="sort-kids">Sort kids by:</label>
+            <select id="sort-kids">
+                <optgroup label="Sort Options">
+                    
+                    <option value="z-a">Name (Z-A)</option>
+
+                    <option value="age">Age</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div class="kids-grid">
+            <div class="kid-card">
+                <img src="kid1.jpg" alt="Kid">
+                <p><strong>Name:</strong> Nora</p>
+                <p><strong>Age:</strong> 10</p>
+            </div>
+            <div class="kid-card">
+                <img src="kid2.jpg" alt="Sophia">
+                <p><strong>Name:</strong> Anna</p>
+                <p><strong>Age:</strong> 8</p>
+            </div>
+            <div class="kid-card">
+                <img src="kid3.jpg" alt="Kid">
+                <p><strong>Name:</strong> Lily</p>
+                <p><strong>Age:</strong> 12</p>
+            </div>
+            <div class="kid-card">
+                <img src="kid4.jpg" alt="Kid">
+                <p><strong>Name:</strong> Sarah</p>
+                <p><strong>Age:</strong> 9</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="Activityenrolment.html">
+                <button>Activity yenrolment</button>
+            </a>
+            <a href="Registeranewkid.html">
+                <button>Register a New Kid</button>
+            </a>
+            <a href="Activityevaluation.html">
+                <button>Activity Evaluation</button>
+            </a>
+        </div>
+        
+    </div>
+
+    <footer> 
+        <div class="footer-container"> 
+            <!-- الشعار --> 
+            <div class="footer-logo"> 
+                <img src="logo.png" alt="Logo"> 
+            </div> 
+     
+            <!-- عنوان Contact us --> 
+            <p class="footer-title">Contact us</p> 
+     
+            <!-- روابط التواصل الاجتماعي مع المعلومات تحت كل أيقونة --> 
+            <div class="footer-contact"> 
+                <div class="contact-item"> 
+                    <a href="#"><img src="insta.png" alt="Instagram"></a> 
+                    <p>@Pink_Horizon</p> 
+                </div> 
+                <div class="contact-item"> 
+                    <a href="#"><img src="email.png" alt="Email"></a> 
+                    <p>PinkHorizon@gmail.com</p> 
+                </div> 
+                <div class="contact-item"> 
+                    <a href="#"><img src="whats.png" alt="WhatsApp"></a> 
+                    <p>0557400029</p> 
+                </div> 
+            </div> 
+     
+            <!-- حقوق النشر --> 
+            <div class="footer-copyright"> 
+                <p>Copyright &copy; 2025 Website. All rights reserved</p> 
+            </div> 
+        </div> 
+    </footer>
+    <script src="Parentdashboard.js"></script>
+      <script src="javaScript.JS"></script>
+
+</body>
+</html>

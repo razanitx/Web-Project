@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Administrator Dashboard</title>
+  <link rel="stylesheet" href="styleall.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="header-logo">
+      <img src="logo.png" alt="Logo" />
+      <span class="site-name">Pink Horizon</span>
+    </div>
+    <nav class="header-nav">
+      <a href="Activities.html"><div class="nav-icon"><img src="activities.png" alt="Activities Icon"/></div>Activities</a>
+      <a href="coaches.html"><div class="nav-icon"><img src="coach.png" alt="Coaches Icon"/></div>Coaches</a>
+      <a href="Parentdashboard.html"><div class="nav-icon"><img src="parent.png" alt="Parent Icon"/></div>Parent</a>
+      <a href="administrator.html"><div class="nav-icon"><img src="admin.png" alt="Administrator Icon"/></div>Administrator</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="breadcrumb">
+    <a href="home.html">Home</a> > 
+    <a href="administrator.html" class="active">Administrator</a>
+  </div>
+
+  <h1>Administrator dashboard</h1>
+
+  <section class="welcome">
+    <img class="profile-image" src="admn.webp" alt="Administrator Profile"/>
+    <div class="welcome-text">
+      <h3>Welcome Danile <span class="admin-icon">&#9873;</span></h3>
+      <p>Let's make today productive! Here's a summary of the latest updates and activities.</p>
+    </div>
+  </section>
+
+  <section class="dashboard-ad">
+    <!-- Kids -->
+    <div class="box-ad">
+      <h3>Kids</h3>
+      <details>
+        <summary>View Kids</summary>
+        <ul>
+          <li>nora</li>
+          <li>lily</li>
+          <li>anna</li>
+          <li class="kids-extra">sara</li>
+          <li class="kids-extra">jumanah</li>
+          <li class="kids-extra">mona</li>
+        </ul>
+        <button class="more-btn" data-target="kids-extra">Show More</button>
+      </details>
+    </div>
+
+    <!-- Activities -->
+    <div class="box-ad">
+      <h3>Activities</h3>
+      <details>
+        <summary>View Activities</summary>
+        <details><summary>sewing (Nadia Bell)</summary>
+          <ul><li>nora</li><li>sara</li><li>lily</li><li>anna</li></ul>
+        </details>
+        <details><summary>planting (Rachel ali)</summary>
+          <ul><li>mona</li><li>sara</li></ul>
+        </details>
+        <details class="activity-extra"><summary>ballet (Rebekah marvin)</summary>
+          <ul><li>nora</li><li>lily</li><li>sara</li></ul>
+        </details>
+        <details class="activity-extra"><summary>drawing (Kelly bell)</summary>
+          <ul><li>mona</li><li>lily</li></ul>
+        </details>
+        <details class="activity-extra"><summary>makeup (Kristin Watson)</summary>
+          <ul><li>mona</li><li>sara</li></ul>
+        </details>
+        <button class="more-btn" data-target="activity-extra">Show More</button>
+      </details>
+    </div>
+
+    <!-- Coaches -->
+    <div class="box-ad">
+      <h3>Coaches</h3>
+      <details>
+        <summary>View Coaches</summary>
+        <details><summary><a href="schedule2.html">Kristin Watson</a></summary>
+          <ul><li>drawing</li><li>ballet</li></ul>
+        </details>
+        <details><summary><a href="schedule1.html">Nadia Bell</a></summary>
+          <ul><li>makeup</li><li>planting</li></ul>
+        </details>
+        <details class="coach-extra"><summary>Rebekah marvin</summary>
+          <ul><li>cooking</li><li>planting</li></ul>
+        </details>
+        <details class="coach-extra"><summary>Rachel ali</summary>
+          <ul><li>ballet</li><li>sewing</li></ul>
+        </details>
+        <details class="coach-extra"><summary>Kelly bell</summary>
+          <ul><li>ballet</li></ul>
+        </details>
+        <details class="coach-extra"><summary>Kim Laton</summary>
+          <ul><li>planting</li></ul>
+        </details>
+        <button class="more-btn" data-target="coach-extra">Show More</button>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo"><img src="logo.png" alt="Logo" /></div>
+    <p class="footer-title">Contact us</p>
+    <div class="footer-contact">
+      <div class="contact-item"><a href="#"><img src="insta.png" alt="Instagram" /></a><p>@Pink_Horizon</p></div>
+      <div class="contact-item"><a href="#"><img src="email.png" alt="Email" /></a><p>PinkHorizon@gmail.com</p></div>
+      <div class="contact-item"><a href="#"><img src="whats.png" alt="WhatsApp" /></a><p>0557400029</p></div>
+    </div>
+    <div class="footer-copyright">
+      <p>Copyright &copy; 2025 Website. All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".more-btn").forEach(button => {
+    const targetClass = button.getAttribute("data-target");
+    const hiddenItems = document.querySelectorAll(`.${targetClass}`);
+
+    hiddenItems.forEach(item => item.style.display = "none");
+
+    button.addEventListener("click", () => {
+      hiddenItems.forEach(item => item.style.display = "");
+      button.style.display = "none";
+    });
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Enrolment</title>
+    <link rel="stylesheet" href="styleall.css">
+   
+</head>
+<body>
+      <!-- Header --> 
+ <header> 
+    <div class="header-container"> 
+        <div class="header-logo"> 
+            <img src="logo.png" alt="Logo"> 
+            <span class="site-name">Pink Horizon</span> <!-- اسم الموقع --> 
+        </div> 
+        <nav class="header-nav"> 
+            <a href="Activities.html"> 
+                <div class="nav-icon"><img src="activities.png" alt="Activities Icon"></div> 
+                Activities 
+            </a> 
+            <a href="coaches.html"> 
+                <div class="nav-icon"><img src="coach.png" alt="Coaches Icon"></div> 
+                Coaches 
+            </a> 
+            <a href="Parentdashboard.html"> 
+                <div class="nav-icon"><img src="parent.png" alt="Parent Icon"></div> 
+                Parent 
+            </a> 
+            <a href="administrator.html"> 
+                <div class="nav-icon"><img src="admin.png" alt="Administrator Icon"></div> 
+                Administrator 
+            </a> 
+        </nav> 
+    </div> 
+</header>
+
+
+    <div class="breadcrumb">
+        <a href="home.html">Home</a> >
+        <a href="Parentdashboard.html">Parent Dashboard </a> >
+        <a href="Activityenrolment.html" class="active">Activity Enrolment</a>
+    </div>
+    <h1>Activity Enrolment</h1>
+
+    <div class="form-container">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="child">Select:</label>
+                <select id="child" name="child" required>
+                    <option value="" disabled selected>Choose your kid</option>
+                    <option value="kid1">Kid 1</option>
+                    <option value="kid2">Kid 2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="filter">Sort by:</label>
+                <select id="filter" name="filter" required>
+                    <optgroup label="Skill Level">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </optgroup>
+                    <optgroup label="Age">
+                        <option value="5-7">5-7</option>
+                        <option value="8-10">8-10</option>
+                        <option value="11-13">11-13</option>
+                    </optgroup>
+                    <optgroup label="Height">
+                        <option value="short">Short</option>
+                        <option value="medium">Medium</option>
+                        <option value="tall">Tall</option>
+                    </optgroup>
+                    <optgroup label="Coach">
+                        <option value="coach1">Coach 1</option>
+                        <option value="coach2">Coach 2</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="activities-container">
+                <div class="activity-card">
+                    <img src="Ballet.jpg" alt="Activity 1">
+                    <p>Ballet</p>
+                    <input type="checkbox" name="activity1">
+                </div>
+                <div class="activity-card">
+                    <img src="cooking.jpg" alt="Activity 2">
+                    <p>Cooking</p>
+                    <input type="checkbox" name="activity2">
+                </div>
+                <div class="activity-card">
+                    <img src="draw.jpg" alt="Activity 3">
+                    <p>Drawing</p>
+                    <input type="checkbox" name="activity3">
+                </div>
+                <div class="activity-card">
+                    <img src="makeup.jpg" alt="Activity 4">
+                    <p>Makeup</p>
+                    <input type="checkbox" name="activity4">
+                </div>
+                <div class="activity-card">
+                    <img src="sewing.jpg" alt="Activity 5">
+                    <p>Sewing</p>
+                    <input type="checkbox" name="activity5">
+                </div>
+                <div class="activity-card">
+                    <img src="Agriculture.jpg" alt="Activity 6">
+                    <p>Planting</p>
+                    <input type="checkbox" name="activity6">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <footer> 
+        <div class="footer-container"> 
+            <!-- الشعار --> 
+            <div class="footer-logo"> 
+                <img src="logo.png" alt="Logo"> 
+            </div> 
+     
+            <!-- عنوان Contact us --> 
+            <p class="footer-title">Contact us</p> 
+     
+            <!-- روابط التواصل الاجتماعي مع المعلومات تحت كل أيقونة --> 
+            <div class="footer-contact"> 
+                <div class="contact-item"> 
+                    <a href="#"><img src="insta.png" alt="Instagram"></a> 
+                    <p>@Pink_Horizon</p> 
+                </div> 
+                <div class="contact-item"> 
+                    <a href="#"><img src="email.png" alt="Email"></a> 
+                    <p>PinkHorizon@gmail.com</p> 
+                </div> 
+                <div class="contact-item"> 
+                    <a href="#"><img src="whats.png" alt="WhatsApp"></a> 
+                    <p>0557400029</p> 
+                </div> 
+            </div> 
+     
+            <!-- حقوق النشر --> 
+            <div class="footer-copyright"> 
+                <p>Copyright &copy; 2025 Website. All rights reserved</p> 
+            </div> 
+        </div> 
+    </footer>
+</body>
+</html>
