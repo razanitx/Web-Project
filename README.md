@@ -39,100 +39,6 @@ The website is designed for:
 - **Young girls aged 3–12 years**
 - **Parents and guardians** looking for a safe, engaging, and creative environment for their children
 
----
-
-## Key Features
-
-### Home Page
-
-The Home Page introduces the Pink Horizon Center and provides an overview of its activities.
-
-Features include:
-
-- Platform name and vision
-- Center logo
-- Six featured activities
-- Activity icons
-- Activity ratings
-- Short descriptions of skills and outcomes
-- Parent reviews and ratings
-- Navigation bar
-- Parent's Dashboard access
-- Administrator Dashboard access
-- Activities page
-- Coaches page
-- Contact information
-- Footer and copyright information
-
----
-
-### Activities Page
-
-The Activities page provides detailed information about the programs offered by the center.
-
-Each activity includes:
-
-- Activity description
-- Prerequisites
-- Schedule
-- Days and times
-- Assigned coach
-- Activity objectives
-- Expected learning outcomes
-
----
-
-### Coaches Page
-
-The Coaches page introduces the coaches available at the center.
-
-Each coach profile includes:
-
-- Coach photo
-- Coach name
-- Area of expertise
-
----
-
-### Administrator Dashboard
-
-The Administrator Dashboard provides an organized view of the center's activities and registered participants.
-
-It includes:
-
-- Registered children list
-- Activities list
-- Current coach for each activity
-- Registered children for each activity
-- Coaches list
-- Assigned activities for each coach
-- Links to the schedule page
-
----
-
-### Schedule Page
-
-The Schedule page displays the weekly schedule of coaches and their assigned activities.
-
-It includes:
-
-- Coach weekly schedule
-- Time slots
-- Assigned activities
-- Availability information
-- Visual indication of unavailable time slots
-
-Unavailable slots are displayed with a grey background for easier identification.
-
----
-
-## Example Activity
-
-### Pink Horizon — Group 3
-
-**Day:** Wednesday  
-**Time:** 10:00 AM – 12:00 PM  
-**Reference:** #74563
 
 ---
 
@@ -142,30 +48,6 @@ The website was designed to provide clear navigation and organized information f
 
 The interface separates the main areas of the platform into dedicated pages, allowing users to easily navigate between activities, coaches, schedules, and dashboards.
 
----
-
-## Website Structure
-
-```text
-Pink-Horizon-Center/
-│
-├── Home Page
-├── Activities
-├── Coaches
-├── Schedule
-├── Parent Dashboard
-├── Administrator Dashboard
-│
-├── assets/
-│   ├── images/
-│   ├── css/
-│   └── ...
-│
-├── docs/
-│   └── Wireframes.pdf
-│
-└── README.md
-```
 
 ---
 
@@ -176,8 +58,6 @@ The project was developed using web development technologies.
 - HTML
 - CSS
 - JavaScript
-- [Add Backend Technology, if applicable]
-- [Add Database Technology, if applicable]
 
 ---
 
@@ -204,28 +84,5 @@ The website was developed to support the following main requirements:
 | Administrator Dashboard | Management of children, activities, and coaches |
 | Schedule | Weekly coach schedules and availability |
 
----
 
-## Project Highlights
 
-- Designed a structured website for a children's educational and creative center.
-- Organized activity information into dedicated pages.
-- Presented coach profiles and areas of expertise.
-- Implemented activity scheduling and availability visualization.
-- Included separate parent and administrator dashboards.
-- Designed the website based on predefined wireframes.
-- Focused on clear navigation and accessible information for parents and guardians.
-
----
-
-## Project Documentation
-
-The project documentation and wireframes are available in the `docs` folder.
-
-📄 **[View Wireframes](docs/Wireframes.pdf)**
-
----
-
-## Project Status
-
-**Completed — Web Development Project**
